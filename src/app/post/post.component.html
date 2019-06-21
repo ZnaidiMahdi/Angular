@@ -1,0 +1,21 @@
+<table class="table" border="3">
+  <tr>
+    <th>Title</th>
+
+    <th>Description</th>
+
+    <th>Etat</th>
+
+    <th> </th>
+    <th> </th>
+  </tr>
+  <tr *ngFor="let aa of listPost">
+    <td>{{aa.title}}</td>
+    <td>{{aa.content}}</td>
+    <td>{{aa.is_approved}}</td>
+    <td><button class="btn btn-success" (click)="approve(aa.id)">Approuvé</button></td>
+    <td><button class="btn btn-danger" (click)="destroy(aa.id)">Supprimer</button></td>
+
+
+  </tr>
+</table>

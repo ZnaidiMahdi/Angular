@@ -1,0 +1,15 @@
+<table class="table" border="3">
+  <tr>
+    <th>Title</th>
+
+    <th>Description</th>
+
+    <th> Action </th>
+  </tr>
+  <tr *ngFor="let aa of listArticle">
+    <td>{{aa.title}}</td>
+    <td>{{aa.description}}</td>
+    <td><button class="btn btn-danger">Supprimer</button></td>
+
+  </tr>
+</table>
